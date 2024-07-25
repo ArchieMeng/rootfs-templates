@@ -80,7 +80,7 @@ sync
 
 # Create stamp file
 mkdir -p ${IMG_MOUNTPOINT}/var/lib/halium
-touch ${IMG_MOUNTPOINT}/var/lib/halium/requires-lvm-resize
+# touch ${IMG_MOUNTPOINT}/var/lib/halium/requires-lvm-resize
 
 # umount the image
 echo "umount root image"
