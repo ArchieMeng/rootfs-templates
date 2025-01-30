@@ -7,7 +7,7 @@ ROOTFS_SIZE=$(du -sm $ROOTFS_PATH | awk '{ print $1 }')
 
 ZIP_NAME=${1}
 WORK_DIR=${ZIP_NAME}.work
-IMG_SIZE=$(( ${ROOTFS_SIZE} + 250 + 32 + 32 )) # FIXME 250MB + 32MB + 32MB contingency
+IMG_SIZE=$(( (${ROOTFS_SIZE} * 100 / 95) + 250 + 32 + 32 )) # FIXME 250MB + 32MB + 32MB contingency + 5% default EXT4 reserved space
 IMG_MOUNTPOINT=".image"
 
 clean() {
