@@ -1,5 +1,5 @@
 {{- $architecture := or .architecture "arm64" -}}
-{{- $suite := "trixie" -}}
+{{- $suite := "bookworm" -}}
 {{- $image := (printf "lindroid-rootfs-%s-plasma-mobile.zip" $architecture) -}}
 {{- $version := or .version "nightly" -}}
 {{- $use_internal_repository := or .use_internal_repository "no" -}}

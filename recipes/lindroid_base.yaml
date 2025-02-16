@@ -1,12 +1,12 @@
 {{- $architecture := or .architecture "arm64" -}}
-{{- $suite := "trixie" -}}
+{{- $suite := "bookworm" -}}
 {{- $use_internal_repository := or .use_internal_repository "no" -}}
 
 architecture: {{ $architecture }}
 actions:
 
   - action: debootstrap
-    suite: trixie
+    suite: bookworm
     components:
       - main
     variant: minbase

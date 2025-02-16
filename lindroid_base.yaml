@@ -1,5 +1,5 @@
 {{- $architecture := or .architecture "arm64" -}}
-{{- $suite := "trixie" -}}
+{{- $suite := "bookworm" -}}
 {{- $use_internal_repository := or .use_internal_repository "no" -}}
 
 {{- $username := or .username "lindroid" -}}
